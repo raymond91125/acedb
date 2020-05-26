@@ -906,11 +906,11 @@ static BOOL writeGFF3Line(void *app_data,
       BOOL no_span ;
 
 
-#ifdef ED_G_NEVER_INCLUDE_THIS_CODE
-      no_span = keyFindTag(ace2so_key, str2tag(ACE2SO_NO_SPAN)) ;
-#endif /* ED_G_NEVER_INCLUDE_THIS_CODE */
-      no_span = keyFindTag(method_obj_key, str2tag(METHOD_GFF_NO_SPAN)) ;
 
+      no_span = keyFindTag(ace2so_key, str2tag(ACE2SO_NO_SPAN)) ;
+#ifdef ED_G_NEVER_INCLUDE_THIS_CODE
+      no_span = keyFindTag(method_obj_key, str2tag(METHOD_GFF_NO_SPAN)) ;
+#endif /* ED_G_NEVER_INCLUDE_THIS_CODE */
 
       if (seg_attrs & FMAPSEGDUMPATTRS_IS_FEATURE)
 	{

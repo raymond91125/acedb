@@ -49,7 +49,7 @@
 #define ACE2SO_SUBPART_TAGS   "SO_subparts_tags"
 #define ACE2SO_PARENT         "SO_parent_obj_tag"
 #define ACE2SO_CHILDREN       "SO_children"
-
+#define ACE2SO_NO_SPAN        "No_span"
 
 /* Keywords used by code in ?Method class in models.wrm. */
 #define METHOD_GFF_NO_SPAN    "GFF_no_span"
