@@ -22,13 +22,19 @@ acedb is licensed under the GNU public licence as described in the file
 
 Extensive documentation from a range of different times, including the original READMEs, can be found in [wdoc/](wdoc/).
 
-In brief, to compile and get going in a Unix environment you first need to have installed the readline package and Glib, GDK and GTK, which can be obtained together in the GTK+ package from  [www.gtk.org](http://www.gtk.org).  Then you need to set the environment variable ACEDB_MACHINE to something appropriate in [wmake/](wmake/), e.g.
+In brief, to compile and get going in a Unix environment you first need to have installed the readline package and Glib, GDK and GTK, which can be obtained together in the GTK+ package from  [www.gtk.org](http://www.gtk.org).  
+
+(for Ubuntu) 
+
+```sudo apt-get install libgtk2.0-dev libreadline-dev bison flex libxmu-dev libcurl4-gnutls-dev tcsh libncurses5-dev```
+
+Then you need to set the environment variable ACEDB_MACHINE to something appropriate in [wmake/](wmake/), e.g.
 ```
-setenv ACEDB_MACHINE LINUX_4
+export ACEDB_MACHINE LINUX_64
 ```
 then
 ```
-ln -s wmake/make
+ln -s wmake/makefile
 make
 ```
 You should have lots of executables (and other files) in the directory `bin.{ACEDB_MACHINE}/`, e.g. in this case `bin.LINUX_4/`. You can either link to these or add this directory to your path.  Once you have done this, you can make a test database in the `wdemo/` directory with
